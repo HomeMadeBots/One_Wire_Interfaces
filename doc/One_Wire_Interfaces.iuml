@@ -1,0 +1,9 @@
+@startuml
+
+!includeurl https://gist.githubusercontent.com/Arnaud-Bonneuil/c317a7a30bed7d64e2b5b1f558ac00cf/raw/sober.plantuml
+!includeurl https://github.com/HomeMadeBots/One_Wire_Interfaces/blob/main/doc/One_Wire_Protocol.iuml
+!includeurl https://github.com/HomeMadeBots/One_Wire_Interfaces/blob/main/doc/T_One_Wire_Device_Address.iuml
+
+T_One_Wire_Device_Address <.. One_Wire_Protocol : use
+
+@enduml
