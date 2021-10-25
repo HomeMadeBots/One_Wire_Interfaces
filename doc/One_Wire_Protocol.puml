@@ -7,7 +7,7 @@ interface One_Wire_Protocol <<Client_Server_Interface>>
   --
   {abstract} +Send_Simple_Command( IN slave_address:T_One_Wire_Device_Address, IN command:uint8 )
   {abstract} +Send_Write_Command( IN slave_address:T_One_Wire_Device_Address, IN command:uint8, IN message:uint8_array, IN nb_bytes:uint8 )
-  {abstract} +Send_Read_Command( IN slave_address:T_One_Wire_Device_Address, IN command:uint8, OUT message:uint8_array, OUT nb_bytes:uint8 )
+  {abstract} +Send_Read_Command( IN slave_address:T_One_Wire_Device_Address, IN command:uint8, OUT message:uint8_array, IN nb_bytes:uint8 )
 }
 
 @enduml
